@@ -9,12 +9,17 @@ import re
 from http.cookiejar import Cookie, LWPCookieJar
 from contextlib import contextmanager
 from functools import wraps
-
+'''
 from PySide2.QtWebKitWidgets import (
     QWebPage,
     QWebSettings,
     QWebView,
 )
+'''
+from PySide2.QtWebEngineWidgets import QWebEnginePage as QWebPage
+from PySide2.QtWebEngineWidgets import QWebEngineSettings as QWebSettings
+from PySide2.QtWebEngineWidgets import QWebEngineView as QWebView
+
 from PySide2.QtCore import (
     QByteArray,
     QDateTime,
