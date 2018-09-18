@@ -381,7 +381,7 @@ class Session(object):
         self.page = web_page_class(self.ghost._app, self)
 
         if network_access_manager_class is not None:
-            self.page.setNetworkAccessManager(
+            self.page(
                 network_access_manager_class(exclude_regex=exclude))
 
         QWebSettings.setMaximumPagesInCache(0)
